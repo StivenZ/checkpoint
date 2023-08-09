@@ -1,0 +1,11 @@
+.main-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #F9FAFB;
+	padding: 1rem;
+	border-radius: 0.75rem;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	margin-bottom: 1rem;
+  }
+  

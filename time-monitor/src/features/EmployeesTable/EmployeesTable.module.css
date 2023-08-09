@@ -1,0 +1,43 @@
+.soft-ui-table {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: #F9FAFB;
+	border-radius: 0.5rem;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.soft-ui-table tr {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+  
+.soft-ui-table th,
+.soft-ui-table td {
+	width: 100%;
+	padding: 1%;
+	text-align: left;
+	border-bottom: 1px solid #E5E7EB;
+}
+  
+.soft-ui-table th {
+	font-size: 10px;
+	font-weight: 600;
+	color: #4B5563;
+}
+  
+.soft-ui-table tbody tr:hover {
+	background-color: #E5E7EB;
+}
+
+.trow td{
+	overflow: auto;
+	
+}
+
+@media only screen and (max-width: 850px) {
+	.soft-ui-table th {
+	  font-size: 7px;
+	}
+} 

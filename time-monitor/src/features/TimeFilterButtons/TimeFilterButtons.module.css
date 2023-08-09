@@ -1,0 +1,202 @@
+.time-filter-wrapper {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	gap: 20px;
+}
+
+.time-filter-container {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	justify-content: flex-end;
+	gap: 10px;
+  }
+  
+  .label {
+	margin-right: 10px;
+	font-size: 16px;
+	color: #333;
+  }
+  
+  .input[type="date"], .input[type="time"], select {
+	padding: 10px;
+	border: none;
+	background-color: #f4f4f4;
+	color: #333;
+	font-size: 16px;
+	cursor: pointer;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	transition: box-shadow 0.2s ease;
+	-webkit-appearance: none; /* Remove default styling for Safari */
+  }
+  
+  .input[type="date"]::-webkit-calendar-picker-indicator {
+	/* Styling the calendar icon in Chrome */
+	filter: invert(40%) sepia(0%) saturate(0%) hue-rotate(128deg) brightness(96%) contrast(92%);
+	cursor: pointer;
+  }
+  
+  .input[type="date"]:hover {
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .input[type="date"]:focus {
+	outline: none;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .button {
+	margin-top: 20px;
+	padding: 10px 15px;
+	border: none;
+	background-color: #007bff;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	transition: box-shadow 0.2s ease;
+  }
+  
+  .button:hover {
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+	background-color: #0056b3;
+  }
+
+
+  /* floating button */
+  .time-filter-container-wrapper {
+	/* position: absolute; */
+	bottom: 5%;
+	right: 50%;
+  }
+
+
+  
+  /* Apply Filter button styles */
+  .apply-filter-button {
+	position: sticky;
+	bottom: 20px;
+	right: 20px;
+	padding: 10px 15px;
+	border: none;
+	background-color: #007bff;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	transition: box-shadow 0.2s ease, transform 0.2s ease;
+	transform: translateZ(0); /* Enable hardware acceleration for smoother animation */
+  }
+  
+  .apply-filter-button:hover {
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+	background-color: #0056b3;
+	transform: scale(1.05);
+  }
+  
+  .apply-filter-button:focus {
+	outline: none;
+  }
+
+
+/* areas */
+
+.checkbox-dropdown {
+    width: 200px;
+    padding: 10px;
+    position: relative;
+    margin: 0 auto;
+    user-select: none;
+	color: #333;
+	font-size: 16px;
+	transition: box-shadow 0.2s ease;
+	-webkit-appearance: none;
+	cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: box-shadow 0.2s ease;
+    -webkit-appearance: none;
+}
+
+.checkbox-dropdown-list {
+	background-color: #f4f4f4;
+	color: #333;
+	font-size: 16px;
+	cursor: pointer;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	display: none;
+    list-style: none;
+	flex-direction: column;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    position: relative;
+    border: inherit;
+	border-radius: 8px;
+    transition: box-shadow 0.2s ease;
+    height: 150px;
+    overflow: scroll;
+    overflow-x: hidden;
+    pointer-events: none; /* avoid mouse click events inside the dropdown */
+	-webkit-appearance: none;
+}
+.is-active .checkbox-dropdown-list {
+	display: flex;
+    pointer-events: auto; /* make sure that the user still can select checkboxes */
+}
+
+.checkbox-dropdown-list .li .label {
+    display: block;
+    border-bottom: 1px solid silver;
+    padding: 10px;
+    transition: all 0.2s ease-out;
+}
+
+.checkbox-dropdown-list .li .label:hover {
+    background-color: #555;
+    color: white;
+}
+
+.section-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	justify-content: start;
+}
+
+.report-type-span {
+	margin-bottom: 10px;
+}
+
+.cols {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: space-between;
+}
+
+.apply-filter-button {
+	position: sticky;
+	left: 85%;
+}
+
+@media only screen and (max-width: 600px) {
+	.apply-filter-button {
+		position: sticky;
+	}
+
+}
+
+@media only screen and (max-width: 600px) {
+	.time-filter-container-wrapper {
+		position: relative;
+		right: 1%;
+		top: 20px;
+	}	
+}

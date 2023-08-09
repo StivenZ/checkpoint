@@ -1,0 +1,11 @@
+.section-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	justify-content: start;
+}
+
+.report-type-span {
+	margin-bottom: 10px;
+}
